@@ -4,7 +4,7 @@
 /*
 -----------------------------------------------------------------------------------*/
 /*Loader*/
-$(document).ready(function () {
+/*$(document).ready(function () {
     //Preloader
     $(window).load(function () {
         preloaderFadeOutTime = 500;
@@ -15,7 +15,7 @@ $(document).ready(function () {
         }
         hidePreloader();
     });
-});
+});*/
 
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
