@@ -14,11 +14,27 @@
 /* a. Webfonts and Iconfonts
 /* =================================================================== */
 
-@import url("../vendor/fonts.css");
+
+/*@import url("../vendor/fonts.css");*/
+
 
 /*@import url("../vendor/font-awesome/css/font-awesome.min.css");*/
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/** Font weight reference
+thin-100;
+extra-light-200;
+light-300;
+regular-400;
+medium-500;
+semi-bold-600
+bold-700;
+extra-bold-800;
+black-900;
+**/
+
 
 /* 
 /* b. Document Setup
@@ -29,7 +45,9 @@
 ---------------------------------------------------------------------- */
 
 body {
-    font: 15px/30px "raleway-regular", sans-serif;
+    font: Raleway, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
     font-weight: 300;
     color: dimgrey;
 }
@@ -44,7 +62,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "raleway-regular", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     color: #252525;
     font-style: normal;
     text-rendering: optimizeLegibility;
@@ -214,7 +233,8 @@ hr {
     margin-right: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
-    font-family: "raleway-regular", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     font-weight: initial;
     background-color: black;
     width: 100%;
@@ -240,8 +260,8 @@ hr {
 
 .navbar-custom .navbar-brand {
     font-size: 18px;
-    font-family: "raleway-regular", sans-serif;
-    font-weight: initial;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     color: whitesmoke
 }
 
@@ -302,7 +322,10 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    font: 15px/30px "raleway", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
     padding: 9px 16px;
     margin: 0 3px 6px 0;
     background: rgb(134, 38, 155);
@@ -362,7 +385,10 @@ hr {
 }
 
 .section-head h1 {
-    font: 15px/24px "raleway-bold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: #252525;
@@ -376,7 +402,10 @@ hr {
 }
 
 .section-head p {
-    font: 18px/36px "raleway-light", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 300;
     width: 95%;
     color: #707273;
     margin-left: auto;
@@ -389,9 +418,9 @@ hr {
 /* =================================================================== */
 
 .intro .intro-body .brand-heading {
-    font-family: "raleway-regular", sans-serif;
-    font-size: 55px;
-    font-weight: 900;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 65px;
     color: whitesmoke;
     text-rendering: optimizeLegibility;
 }
@@ -399,8 +428,8 @@ hr {
 .intro .intro-body .intro-text {
     font-size: 20px;
     color: whitesmoke;
-    font-family: "raleway-regular", sans-serif;
-    font-weight: 500;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
@@ -574,14 +603,20 @@ hr {
 }
 
 .item .item-wrap .projects-item-meta h5 {
-    font: 15px/21px "raleway-heavy", sans-serif;
+    font: Raleway, sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
     margin: 0;
     color: white;
     word-wrap: break-word;
 }
 
 .item .item-wrap .projects-item-meta p {
-    font: 14px/18px "raleway-semibold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
     color: #fbcab3;
     margin: 0;
 }
@@ -635,14 +670,18 @@ hr {
 }
 
 .service-list h3 {
-    font: 16px/24px "raleway-heavy", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
     padding: 0;
 }
 
 .service-list p {
     color: #707273;
     position: relative;
-    font-family: "raleway-medium";
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
     top: -6px;
 }
 
@@ -669,7 +708,10 @@ hr {
 }
 
 #about h3 {
-    font: 16px/36px "raleway-semibold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 500;
     text-transform: none;
     padding: 0;
     margin-bottom: 0;
@@ -677,7 +719,8 @@ hr {
 
 #about p {
     color: #252525;
-    font: "raleway-medium", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
 }
 
 #about .left {
@@ -883,7 +926,7 @@ hr {
 }
 
 .award-thumb .award-title h3 {
-    font-family: "raleway", sans-serif;
+    font-family: Raleway, sans-serif;
     color: #222222;
     margin: 0;
     font-size: 16px;
@@ -923,7 +966,7 @@ hr {
     display: block;
     color: #222222;
     border-radius: 3px;
-    font-family: "raleway", sans-serif;
+    font-family: Raleway, sans-serif;
     background: #f7f7f7;
     padding: 10px 20px;
     border: none;
@@ -1037,14 +1080,14 @@ footer {
 }
 
 #modal-wrapper .modal-title {
-    font-size: 34px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 @media (min-width: 992px) {
     #modal-wrapper .modal-header,
     #modal-wrapper .modal-body {
-        width: 900px;
+        width: 500px;
     }
 }
 
@@ -1056,5 +1099,6 @@ footer {
 }
 
 .modal-body {
-    font-family: "raleway-medium";
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
 }
