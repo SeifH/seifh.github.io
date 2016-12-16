@@ -77,16 +77,27 @@ $('.navbar-collapse ul li a').click(function () {
     ------------------------------------------------------ */
     $('.smoothscroll').on('click', function (e) {
 
-        e.preventDefault();
-
-        var target = this.hash,
-            $target = $(target);
-
+        var $anchor = $(this);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 800, 'swing', function () {
-            window.location.hash = target;
-        });
+            scrollTop: ($($anchor.attr('href')).offset().top)
+        }, 800, 'swing');
+
+        event.preventDefault();
+
+        /*
+         *Previous scroll method
+         */
+
+        /* e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top
+         }, 800, 'swing', function () {
+             window.location.hash = target;
+         });*/
 
     });
 
@@ -141,6 +152,9 @@ function scrollToTop() {
     }, 500, 'linear');
 }
 
+/*
+Certificate and Awards filter
+*/
 $(function () {
     $('.categories a').click(function (e) {
         $('.categories ul li').removeClass('active');
