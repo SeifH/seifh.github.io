@@ -90,6 +90,9 @@
 
     <!-- Intro Header -->
     <header class="intro" id="home">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -109,7 +112,7 @@
     <section id="about">
         <div class="row team section-head">
             <div class="twelve columns">
-                <h1>Me in 30 Seconds</h1>
+                <h1>About Me</h1>
                 <hr/>
             </div>
         </div>
@@ -126,7 +129,7 @@
                                 <span>Mechanical Engineer</span>
                             </div>
                         </div>
-                        <p>I'm an undergraduate student studying Mechanical Engineering at the University of Toronto with the intention of focusing on research in robotics and mechatronics. My goal is to use my mechanical engineering skills to develop next generation robots that will be integrated into our society. As an undergraduate, I've worked on multiple projects and gained experience in research. During my leisure time, I enjoy playing futsal, going to the gym, and listening to music.</p>
+                        <p>I’m a junior at the University of Toronto studying Mechanical Engineering with a focus in Robotics and Mechatronics. I love designing, building, and programming. I have had experience in mechanical engineering, design, research, robotics, programming in Java/C, and CAD/CAM design. As a <i>mechanical engineer</i>, my goal is to use my mechanical engineering skills to develop next generation robots that will be integrated into our society. In my free time, I enjoy playing futsal, going to the gym, and listening to music.</p>
                         <ul class="member-social">
                             <li><a href="mailto:seif.hassan.4@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/seifh" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -166,7 +169,16 @@
                         <img src="images/uoftemblem.png">
                         <h3>Research Assistant</h3>
                         <div class="service-content">
-                            <p>I was part of a research group at the Human Factors and Applied Statistics Lab that investigated the social-psychological factors of distracted driving behavior among teenagers.
+                            <p>I am part of a research group at the Microrobotics Laboratory that investigates micro-scale robotics and bio-inspired locomotion systems.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /bgrid -->
+                    <div class="bgrid work-logo">
+                        <img src="images/uoftemblem.png">
+                        <h3>Research Assistant</h3>
+                        <div class="service-content">
+                            <p>I was part of a research group at the Human Factors and Applied Statistics Laboratory that investigated the social-psychological factors of distracted driving behavior among teenagers.
                             </p>
                         </div>
                     </div>
@@ -208,6 +220,20 @@
                 <div id="projects-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
                     <div class="bgrid item">
                         <div class="item-wrap">
+                            <a href="#" data-target="#pcbdesign" data-toggle="modal">
+                                <img src="images/pcbmachine.png" alt="CNC Milling Machine">
+                                <div class="overlay">
+                                    <div class="projects-item-meta">
+                                        <h5>CNC Milling Machine</h5>
+                                        <p>Mechanical Engineering Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /item -->
+                    <div class="bgrid item">
+                        <div class="item-wrap">
                             <a href="#" data-target="#sdadesign" data-toggle="modal">
                                 <img src="images/sdadesign.png" alt="Sustainable Design Awards">
                                 <div class="overlay">
@@ -237,7 +263,7 @@
                     <div class="bgrid item">
                         <div class="item-wrap">
                             <a href="#" data-target="#sumodesign" data-toggle="modal">
-                                <img src="images/sumobot.jpeg" alt="UTRA Sumo Bot">
+                                <img src="images/sumobot.png" alt="UTRA Sumo Bot">
                                 <div class="overlay">
                                     <div class="projects-item-meta">
                                         <h5>Autonomous Robot</h5>
@@ -483,17 +509,35 @@
 
     <!--Project Pop-ups!-->
     <div id="modal-wrapper">
+        <div class="modal" id="pcbdesign">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 style="font-weight:bold">CNC Milling Machine</h3>
+                        <h6>Mechanical Engineering Design</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-circle" src="images/pcbmachine.png" style="width: 300px; height: 300px;">
+                        <figcaption>Figure: CNC milling machine model designed in SolidWorks.</figcaption>
+                        <p align="justify">The entry-level professional CNC milling machine designed and analyzed by a 6-person team in MIE243, Mechanical Engineering Design at the University of Toronto. The machine is to be used by small businesses for the manufacture of high-accuracy and high-quality prototypes. The machine has a resolution of 2 um and if it enters production, it is estimated to cost around $2,000 (CAD).</p>
+                        <p><a class="btn btn-default" data-dismiss="modal" role="button">Close</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal" id="sdadesign">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">WaterLine</h4>
+                        <h3 style="font-weight:bold">WaterLine</h3>
+                        <h6>2016 Sustainable Design Awards</h6>
                     </div>
                     <div class="modal-body">
-                        <img class="img-circle" src="images/sdadesign.png" style="width: 140px; height: 140px;">
-                        <h2>2016 Sustainable Design Awards</h2>
-                        <p>Designed a water-saving technology for bathrooms. The system captures greywater from showers for reuse in toilet flushing.</p>
+                        <img class="img-circle" src="images/sdadesign.png" style="width: 300px; height: 300px;">
+                        <figcaption>Figure: The <i>WaterLine</i> model made using Sketchup.</figcaption>
+                        <p align="justify">I invented and prototyped a product named <i>WaterLine</i> for the 2016 Sustainable Design Awards competition. The design aims to tackle sustainability issues that we encounter in our everyday lives. <i>WaterLine</i> is a water-saving shower tank for the average household. The system captures greywater from showers for reuse in toilet flushing. A poster was designed detailing the project and a prototype was produced in SketchUp.</p>
                         <p><a class="btn btn-default" data-dismiss="modal" role="button">Close</a></p>
                     </div>
                 </div>
@@ -504,12 +548,14 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">Noise Abatement &#38 Visual Privacy</h4>
+                        <h3 style="font-weight:bold">Noise Abatement &#38 Visual Privacy</h3>
+                        <h6>Engineering Strategies &#38 Practice</h6>
                     </div>
                     <div class="modal-body">
-                        <img class="img-circle" src="images/acoustifence.png" style="width: 140px; height: 140px;">
-                        <h2>Engineering Strategies &#38 Practice</h2>
-                        <p>Designed a fence addition for a client to reduce noise from AC units and increase privacy, with a team of 5 students. The proposed design used a noise-blocking barrier and camera-blocking laser system.</p>
+                        <img class="img-circle" src="images/acoustifence.png" style="width: 300px; height: 300px;">
+                        <figcaption>Figure: Sketch of the Acoustifence noise reducing fence.</figcaption>
+                        <p align="justify">I, along with 4 undergraduate students, designed a noise abatement and visual privacy product for a client in Engineering Strategies and Practices at the University of Toronto. The design reduced the noise caused by AC units using an Acoustifence. It also included a laser-blocking system that protects the privacy of the client from the neighbour’s security camera. The design was communicated to the client through a written report as well as an oral presentation.
+                        </p>
                         <p><a class="btn btn-default" data-dismiss="modal" role="button">Close</a></p>
                     </div>
                 </div>
@@ -520,12 +566,14 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">Autonomous Robot</h4>
+                        <h3 style="font-weight:bold">Autonomous Robot</h3>
+                        <h6>University of Toronto Robotics Association</h6>
                     </div>
                     <div class="modal-body">
-                        <img class="img-circle" src="images/sumobot.jpeg" style="width: 140px; height: 140px;">
-                        <h2>University of Toronto Robotics Association Sumo Competition</h2>
-                        <p>Built an autonomous robot that tries to push other robots out of a ring. Responsible for implementing the mechanical component; prototyping, CAD modeling, drilling, cutting and machining sheet metal.</p>
+                        <img class="img-circle" src="images/sumobot.png" style="width: 300px; height: 300px;">
+                        <figcaption>Figure: 3D CAD model of the robot made using SolidWorks.</figcaption>
+                        <p align="justify">As part of a year long sumo robot competition at the University of Toronto Robotics Association (UTRA), I designed and built an autonomous robot that tries to push other robots out of a ring in a 3-person team. The team received $150 worth of prizes throughout the year long University of Toronto Robotics Association (UTRA) sumo robot competition (2015 - 2016).
+                        </p>
                         <p><a class="btn btn-default" data-dismiss="modal" role="button">Close</a></p>
                     </div>
                 </div>
@@ -536,12 +584,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">True Sport Coaching App</h4>
+                        <h3 style="font-weight:bold">True Sport Coaching App</h3>
+                        <h6>True Sport Foundation</h6>
                     </div>
                     <div class="modal-body">
-                        <img class="img-circle" src="images/coachme.png" style="width: 140px; height: 140px;">
-                        <h2>True Sport Foundation</h2>
-                        <p> Developed an Android soccer coaching app for True Sport, a sports non-profit organization, in Java using the Android Developer Tools for Eclipse IDE. The app allows coaches to communicate game strategies and manage their team (<a href="https://github.com/SeifH/CoachMe">See Project</a>).</p>
+                        <img class="img-circle" src="images/coachme.png" style="width: 300px; height: 300px;">
+                        <figcaption>Figure: Screen capture of the drawing board screen.</figcaption>
+                        <p>Along with a colleague, we developed an Android soccer coaching app for True Sport, a sports non-profit organization, in Java using the Android Developer Tools for Eclipse IDE. The app allows coaches to communicate game strategies and manage their team (<a href="https://github.com/SeifH/CoachMe">See Project</a>).</p>
                         <p><a class="btn btn-default" data-dismiss="modal" role="button">Close</a></p>
                     </div>
                 </div>
@@ -552,12 +601,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">Patroller</h4>
+                        <h3 style="font-weight:bold">Patroller</h3>
+                        <h6>2015 TechU.me AppJam Competition</h6>
                     </div>
                     <div class="modal-body">
-                        <img class="img-circle" src="images/appjamphone.png" style="width: 140px; height: 140px;">
-                        <h2>2015 TechU.me AppJam Competition</h2>
-                        <p>Created a single and multiplayer Android game that lets you control a cannon to shoot down enemy targets. The app was programmed in Java using the Eclipse IDE.</p>
+                        <img class="img-circle" src="images/appjamphone.png" style="width: 300px; height: 300px;">
+                        <figcaption>Figure: Screen capture of the game.</figcaption>
+                        <p align="justify">I created a single and multiplayer Android game, <i>Patroller</i>, that lets you control a cannon to shoot down enemy targets. The app was programmed in Java using the Eclipse IDE. The app was selected as a finalist by industry judges for the 2015 TechU.me AppJam Competition, and was offered the Faculty of Engineering/AppJam scholarship from University of Ottawa</p>
                         <p><a class="btn btn-default" data-dismiss="modal" role="button">Close</a></p>
                     </div>
                 </div>
@@ -576,7 +626,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">Dean's Honour List</h3>
-                        <p>University of Toronto</p>
+                        <h6>University of Toronto</h6>
                     </div>
                     <div class="modal-body">
                         <p>Dean's Honour List - Academic Average of 80.0% or above (2015 to Present)</p>
@@ -596,7 +646,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">R Programming</h3>
-                        <p>Johns Hopkins University (Online)</p>
+                        <h6>Johns Hopkins University (Online)</h6>
                     </div>
                     <div class="modal-body">
                         <p>R Programming by Johns Hopkins University on Coursera.
@@ -617,7 +667,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">President’s Entrance Scholarship</h3>
-                        <p>University of Toronto</p>
+                        <h6>University of Toronto</h6>
                     </div>
                     <div class="modal-body">
                         <p>University of Toronto President’s Entrance Scholarship - Entrance Average 92% or better</p>
@@ -636,7 +686,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">DELF B2</h3>
-                        <p>Centre international d'études pédagogiques (CIEP)</p>
+                        <h6>Centre international d'études pédagogiques (CIEP)</h6>
                     </div>
                     <div class="modal-body">
                         <p>DELF B2 International French Diploma by Centre International d’Etudes Pédagogiques (CIEP). A French language proficiency certification.
@@ -657,7 +707,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">Extended French Certificate</h3>
-                        <p>Ottawa-Carleton District School Board (OCDSB)</p>
+                        <h6>Ottawa-Carleton District School Board (OCDSB)</h6>
                     </div>
                     <div class="modal-body">
                         <p>Extended French Certificate by Ottawa-Carleton District School Board (OCDSB).
@@ -678,7 +728,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">2015 TechU.me AppJam Finalist</h3>
-                        <p>Ontario Network for Education</p>
+                        <h6>Ontario Network for Education</h6>
                     </div>
                     <div class="modal-body">
                         <p>Developed an Android app that was selected as a finalist by industry judges for the 2015 TechU.me AppJam hosted by the Ottawa Network for Education (ONFE).</p>
@@ -698,7 +748,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 style="font-weight:bold">2015 COIN Competition Honour Roll Winner</h3>
-                        <p>Chartered Professional Accountants of Ontario</p>
+                        <h6>Chartered Professional Accountants of Ontario</h6>
                     </div>
                     <div class="modal-body">
                         <p>10th Place Winner (Tied) in the 2015 COIN Competition, an accounting competition conducted by Chartered Professional Accountants of Ontario ("CPA Ontario") open to all secondary school students in the Province of Ontario</p>
