@@ -807,23 +807,6 @@ hr {
     color: gray;
     display: block;
 }
-#team-wrapper .member-social {
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 24px;
-    margin: 12px 0 0 0;
-    padding: 0;
-}
-#team-wrapper .member-social li {
-    display: inline-block;
-    margin-right: 15px;
-}
-#team-wrapper .member-social li a {
-    color: #252525;
-}
-#team-wrapper .member-social li a:hover {
-    color: rgb(134, 38, 155);
-}
 
 /* 
 /*  Awards Section
