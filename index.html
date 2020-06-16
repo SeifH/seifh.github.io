@@ -1,4 +1,7 @@
 <!doctype html>
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 <html lang=en-us>
 
 <head>
@@ -66,64 +69,7 @@
     <meta property="og:locale" content="en-us">
     <script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://www.seifhassan.com?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://www.seifhassan.com"}</script>
 
-    <script type="text/javascript">
-        function get_browser() {
-            var ua = navigator.userAgent,
-                tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
-            if (/trident/i.test(M[1])) {
-                tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
-                return {
-                    name: 'IE',
-                    version: (tem[1] || '')
-                };
-            }
-            if (M[1] === 'Chrome') {
-                tem = ua.match(/\bOPR\/(\d+)/)
-                if (tem != null) {
-                    return {
-                        name: 'Opera',
-                        version: tem[1]
-                    };
-                }
-            }
-            if (window.navigator.userAgent.indexOf("Edge") > -1) {
-                tem = ua.match(/\Edge\/(\d+)/)
-                if (tem != null) {
-                    return {
-                        name: 'Edge',
-                        version: tem[1]
-                    };
-                }
-            }
-            M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
-            if ((tem = ua.match(/version\/(\d+)/i)) != null) {
-                M.splice(1, 1, tem[1]);
-            }
-            return {
-                name: M[0],
-                version: +M[1]
-            };
-        }
 
-        var browser = get_browser()
-        var isSupported = isSupported(browser);
-
-        function isSupported(browser) {
-            var supported = false;
-            if (browser.name === "Chrome" && browser.version >= 48) {
-                supported = true;
-            } else if ((browser.name === "MSIE" || browser.name === "IE") && browser.version >= 10) {
-                supported = true;
-            } else if (browser.name === "Edge") {
-                supported = false;
-            }
-            return supported;
-        }
-
-        if (!isSupported) {
-            document.write( < h1 > Website note compatible with Internet Explorer < /h1>)
-            }
-    </script>
 
     <title>Seif Hassan</title>
 </head>
