@@ -20,7 +20,6 @@
 
     <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
     <link rel=stylesheet href=/css/academic.min.03a04331042cb69038f40f9535e1cbd5.css>
-
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel=apple-touch-icon type=image/png href=/images/icon.png>
 
@@ -66,6 +65,65 @@
     <meta property="og:description" content>
     <meta property="og:locale" content="en-us">
     <script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://www.seifhassan.com?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://www.seifhassan.com"}</script>
+
+    <script type="text/javascript">
+        function get_browser() {
+            var ua = navigator.userAgent,
+                tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+            if (/trident/i.test(M[1])) {
+                tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                return {
+                    name: 'IE',
+                    version: (tem[1] || '')
+                };
+            }
+            if (M[1] === 'Chrome') {
+                tem = ua.match(/\bOPR\/(\d+)/)
+                if (tem != null) {
+                    return {
+                        name: 'Opera',
+                        version: tem[1]
+                    };
+                }
+            }
+            if (window.navigator.userAgent.indexOf("Edge") > -1) {
+                tem = ua.match(/\Edge\/(\d+)/)
+                if (tem != null) {
+                    return {
+                        name: 'Edge',
+                        version: tem[1]
+                    };
+                }
+            }
+            M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+            if ((tem = ua.match(/version\/(\d+)/i)) != null) {
+                M.splice(1, 1, tem[1]);
+            }
+            return {
+                name: M[0],
+                version: +M[1]
+            };
+        }
+
+        var browser = get_browser()
+        var isSupported = isSupported(browser);
+
+        function isSupported(browser) {
+            var supported = false;
+            if (browser.name === "Chrome" && browser.version >= 48) {
+                supported = true;
+            } else if ((browser.name === "MSIE" || browser.name === "IE") && browser.version >= 10) {
+                supported = true;
+            } else if (browser.name === "Edge") {
+                supported = false;
+            }
+            return supported;
+        }
+
+        if (!isSupported) {
+            document.write( < h1 > Website note compatible with Internet Explorer < /h1>)
+            }
+    </script>
 
     <title>Seif Hassan</title>
 </head>
@@ -318,13 +376,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="isotope projects-container">
-                        <div class="project-card project-item isotope-item js-id-Deep-Learning js-id-Programming js-id-Robotics">
+                    <div class="isotope projects-container js-layout-masonry ">
+                        <div class="project-card project-item isotope-item js-id-Programming js-id-Robotics">
                             <div class="card">
                                 <a href=# data-target=#autonomousrobot data-toggle=modal class="card-image hover-overlay">
                                     <img src="images/Bot.png" alt=" " class="img-responsive ">
                                 </a>
-                                <div class="card-text text-center">
+                                <div class="card-text text-center ">
                                     <h4><a href=# data-target=#autonomousrobot data-toggle=modal >Autonomous Robot</a></h4>
                                     <div class="article-style">
                                         <p>Programmed a TurtleBot to perform various tasks inside an arena</p>
