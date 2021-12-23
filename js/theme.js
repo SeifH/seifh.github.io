@@ -58,18 +58,9 @@
 			}
 		});
 	}
-	/*----------------------------------------------------*/
-	/*  End  Magnific Pop Up
-	/*----------------------------------------------------*/
 
-	/*----------------------------------------------------*/
-    /* counter js
-    /*----------------------------------------------------*/
-    // if(document.getElementById("features_counter")){
-    //     $('.counter').counterUp({
-    //         delay: 10,
-    //         time: 1000
-    //     });
-    // }
+	function enableBtn(){
+		document.getElementById("contactButton").disabled = false;
+	}
 
 })(jQuery);
