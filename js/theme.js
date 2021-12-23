@@ -59,8 +59,13 @@
 		});
 	}
 
-	function enableBtn(){
-		document.getElementById("contactButton").disabled = false;
+	$("form").each(function() {
+		$(this).find(':input[type="submit"]').prop('disabled', true);
+	});
+	function correctCaptcha() {
+		$("form").each(function() {
+			$(this).find(':input[type="submit"]').prop('disabled', false);
+		});
 	}
 
 })(jQuery);
