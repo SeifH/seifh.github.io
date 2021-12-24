@@ -163,14 +163,14 @@ button.primary_btn {
     top: -2px;
     display: inline-block;
     margin-left: 5px;
-    width: 80px;
-    height: 4px;
+    width: 60px;
+    height: 3px;
     background: rgba(237, 35, 159, 0.6);
-    filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -webkit-filter: blur(4px);
+    filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0x);
+    -webkit-filter: blur(0px);
     border-radius: 5px
 }
 
