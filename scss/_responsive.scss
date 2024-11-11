@@ -49,8 +49,7 @@
 		margin-bottom: 23px;
 	}
 	.header_area .navbar {
-		background: #ffffff;
-		box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1)
+		background: #000;
 	}
 	.navbar-toggler[aria-expanded="false"] span:nth-child(2) {
 		opacity: 1;
@@ -72,7 +71,7 @@
 		display: block;
 		width: 25px;
 		height: 3px;
-		background: #05364d;
+		background: #fff;
 		margin: auto;
 		margin-bottom: 4px;
 		transition: all 400ms linear;
@@ -99,6 +98,7 @@
 		display: block;
 		border-bottom: 1px solid #ededed33;
 		border-radius: 0px;
+		color: #fff;
 	}
 	.header_area .navbar .search {
 		margin-left: 0px;
@@ -120,6 +120,14 @@
 	}
 	.header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
 		line-height: 40px;
+		color: #fff;
+	}
+	.header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
+		line-height: 40px;
+		color: #fff;
+	}
+	.header_area.white_menu .navbar .nav .nav-item .nav-link {
+		color: #222;
 	}
 	/* End Main Menu Area css
 	============================================================================================ */
@@ -214,8 +222,8 @@
 	}
 	.home_banner_area .banner_inner {
 		min-height: 300px;
-		padding-top: 155px;
-    	padding-bottom: 0px;
+		padding-top: 200px;
+		padding-bottom: 50px;
 	}
 	.home_banner_area .banner_inner .banner_content {
 		margin-top: 0px;

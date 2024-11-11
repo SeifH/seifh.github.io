@@ -5,13 +5,13 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/logo2.png" type="image/png">
-	<title>Seif Hassan - Personal Website</title>
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>My Work</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
-  <link rel="stylesheet" href="css/themify-icons.css">
-	<link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
@@ -21,13 +21,12 @@
 <body>
 
 	<!--================ Start Header Area =================-->
-	<header class="header_area header_inner_page">
+	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<a class="navbar-brand logo_inner_page" href="index.html"><img src="img/logo.png" alt=""></a>   
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -36,11 +35,10 @@
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav">
-							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>						
 							<li class="nav-item active"><a class="nav-link" href="portfolio.html">My Work</a></li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Resume</a></li>
 						</ul>
 					</div>
 				</div>
@@ -49,155 +47,192 @@
 	</header>
 	<!--================ End Header Area =================-->
 
-  <!--================ Start Banner Area =================-->
-  <section class="banner_area">
-      <div class="banner_inner d-flex align-items-center">
-          <div class="container">
-              <div class="banner_content text-center">
-                  <h2>My Work</h2>
-                  <div class="page_link">
-                      <a href="index.html">Home</a>
-                      <a href="portfolio.html">My Work</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!--================ End Banner Area =================-->
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Portfolio</h2>
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
 
-
-  <!--================ Start Portfolio Area =================-->
-	<section class="portfolio_area section-margin pb-0" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title">
-						<p class="top_text">My Work<span></span></p>
-						<h2>Check Out Some of my Projects!</h2>
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area section_gap_top" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main_title text-left">
+                        <h2>A curated collection of projects <br>
+                            ──── &nbsp &nbsp from personal, academic, and research </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filters portfolio-filter">
+                <ul>
+                    <li class="active" data-filter="*">all</li>
+                    <li data-filter=".machinelearning">AI/Machine Learning</li>
+                    <li data-filter=".prodev">Product Development</li>
+                    <li data-filter=".research">Research</li>
+                </ul>
+            </div>
+    
+            <div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all machinelearning">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/summarizer.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/summarizer.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="AISummarizer.html">AI Text Summarizer</a></h4>
+								<p>AI/Machine Learning</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all machinelearning">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/hospital.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/hospital.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="MLHospital.html">Predicting Hospital No-Shows using Machine Learning</a></h4>
+								<p>AI/Machine Learning</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all prodev">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/Cleanslate.PNG" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/Cleanslate.PNG" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="UVSanitizer.html">Wall-Mounted UV Phone Sanitizer for Hospitals</a></h4>
+								<p>Product Development</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all prodev">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/maze.PNG" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/maze.PNG" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="AutonomousRobot.html">Autonomous Maze-Solving Robotic System</a></h4>
+								<p>Product Development</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all research">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/HFAST.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/HFAST.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="DriverDistraction.html">Driver Distraction</a></h4>
+								<p>Research</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all research">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/Microrobotics.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/microgripper.gif" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="microgripper.html">microrobotic gripper</a></h4>
+								<p>Research</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".design">Product Design</li>
-					<li data-filter=".data">Data Science & ML</li>
-					<li data-filter=".robot">Robotics</li>
-					<li data-filter=".upcoming">upcoming</li>
-				</ul>
-			</div>
-
-			<div class="filters-content">
-				<div class="row portfolio-grid">
-					<div class="grid-sizer col-md-3 col-lg-3"></div>
-					<div class="col-lg-6 col-md-6 all design">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/sanitizer.png" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="sanitizer-details.html">UV Phone Sanitizer</a></h4>
-						<a href="sanitizer-details.html" class="primary_btn2 mt-35">Learn More</a>
-							</div>
-						</div>
+        </div>
+    </section>
+    <!--================End Portfolio Area =================-->
+    
+<!--================ Start Footer Area =================-->
+<section class="newsletter_area">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-12">
+				<div class="subscription_box text-center">
+					<h2 class="text-uppercase text-white">Follow Me</h2>
+					<div class="footer_social">
+						<a href="https://www.linkedin.com/in/seifh/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://github.com/SeifH"><i class="fa fa-github"></i></a>
+						<a href="contact.html"><i class="fa fa-envelope"></i></a>
 					</div>
-
-					<div class="col-lg-6 col-md-6 all design">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/pingpong.png" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="pingpong-details.html">Ping Pong Launcher</a></h4>
-								<a href="pingpong-details.html" class="primary_btn2 mt-35">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all data">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/summarizer.png" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="summarizer-details.html">AI-Powered Text Summarizer</a></h4>
-								<a href="summarizer-details.html" class="primary_btn2 mt-35">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all data">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/hospital.png" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="hospitalNoShow-details.html">Patient Attendance/No-Show Prediction</a></h4>
-								<a href="hospitalNoShow-details.html" class="primary_btn2 mt-35">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all robot">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/bot.png" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="bot-details.html">Autonomous Robot</a></h4>
-								<a href="bot-details.html" class="primary_btn2 mt-35">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all upcoming">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="img/portfolio/bobble.png" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a>Chibo Art (Coming Soon!)</a></h4>
-								<a class="primary_btn2 mt-35">Coming Soon!</a>
-							</div>
-						</div>
-					</div>
-
+					<p class="footer-text">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		Copyright &copy;<script>document.write(new Date().getFullYear());</script> Seif Hassan | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================ End Portfolio Area =================-->
-        
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_social mt-lg-0 mt-4">
-							<a href="https://www.linkedin.com/in/seifh/"><i class="fab fa-linkedin"></i></a>
-							<a href="https://github.com/SeifH"><i class="fab fa-github"></i></a>
-							<a href="contact.html"><i class="fas fa-envelope"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Seif Hassan | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-				</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-  
-
-  <!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/theme.js"></script>
+		
+	</div>
+</section>
+<!--================ End Footer Area =================-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
